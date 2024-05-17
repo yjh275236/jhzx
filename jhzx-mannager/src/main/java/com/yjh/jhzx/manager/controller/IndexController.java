@@ -22,6 +22,7 @@ public class IndexController {
     @Autowired
     private ValidateCodeService validateCodeService;
 
+    //验证码
     @GetMapping(value = "/generateValidateCode")
     public Result<ValidateCodeVo> generateValidateCode() {
         ValidateCodeVo validateCodeVo = validateCodeService.generateValidateCode();

@@ -1,5 +1,6 @@
 package com.yjh.jhzx.manager.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.yjh.jhzx.common.exception.YjhException;
 import com.yjh.jhzx.manager.mapper.SysUserMapper;
@@ -8,6 +9,7 @@ import com.yjh.jhzx.model.dto.system.LoginDto;
 import com.yjh.jhzx.model.entity.system.SysUser;
 import com.yjh.jhzx.model.vo.common.ResultCodeEnum;
 import com.yjh.jhzx.model.vo.system.LoginVo;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -26,6 +28,19 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public LoginVo login(LoginDto loginDto) {
+        //进行验证码的校验及删除
+        String captcha = loginDto.getCaptcha();//生成的验证码
+        String key = loginDto.getCodeKey();
+        String redisCode = redisTemplate.opsForValue().get("user:validate" + key);
+
+        if (StrUtil.isEmpty(redisCode) || !StrUtil.equals(redisCode,captcha)){
+            throw new YjhException(ResultCodeEnum.VALIDATECODE_ERROR);
+        }
+
+
+        redisTemplate.delete("user:validate"+key);
+
+        //登入
         String userName = loginDto.getUserName();
 
         SysUser sysUser =sysUserMapper.selectUserInfoByUserName(userName);

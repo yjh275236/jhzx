@@ -26,7 +26,11 @@ public class ValidateCodeServiceImpl implements ValidateCodeService {
         String key = UUID.randomUUID().toString().replaceAll("_","");
         redisTemplate.opsForValue().set("user:validate"+key,codeValue,5, TimeUnit.MINUTES);
 
-        return null;
+        ValidateCodeVo validateCodeVo= new ValidateCodeVo();
+        validateCodeVo.setCodeKey(key);
+        validateCodeVo.setCodeValue("data:image/png;base64," + imageBase64);
+
+        return validateCodeVo;
     }
 
 }

@@ -78,3 +78,45 @@
 2024-05-08 14:14:02 HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s669ms), soft-evicting connections from pool.
 2024-05-08 18:00:47 HikariPool-1 - Shutdown initiated...
 2024-05-08 18:00:47 HikariPool-1 - Shutdown completed.
+2024-05-17 09:09:40 Starting ManagerApplication using Java 17.0.10 with PID 1963 (/Users/yjh/Downloads/jhzx-parent/jhzx-mannager/target/classes started by yjh in /Users/yjh/Downloads/jhzx-parent)
+2024-05-17 09:09:40 The following 1 profile is active: "dev"
+2024-05-17 09:09:41 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17 09:09:41 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 09:09:41 Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-05-17 09:09:41 Tomcat initialized with port(s): 8501 (http)
+2024-05-17 09:09:41 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-17 09:09:41 Starting service [Tomcat]
+2024-05-17 09:09:41 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-17 09:09:41 Initializing Spring embedded WebApplicationContext
+2024-05-17 09:09:41 Root WebApplicationContext: initialization completed in 772 ms
+2024-05-17 09:09:42 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-17 09:09:42 Tomcat started on port(s): 8501 (http) with context path ''
+2024-05-17 09:09:42 Started ManagerApplication in 2.033 seconds (process running for 2.327)
+2024-05-17 09:09:47 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17 09:09:47 Initializing Servlet 'dispatcherServlet'
+2024-05-17 09:09:47 Completed initialization in 3 ms
+2024-05-17 09:10:00 HikariPool-1 - Starting...
+2024-05-17 09:10:01 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b8c1f78
+2024-05-17 09:10:01 HikariPool-1 - Start completed.
+2024-05-17 10:09:14 HikariPool-1 - Shutdown initiated...
+2024-05-17 10:09:14 HikariPool-1 - Shutdown completed.
+2024-05-17 10:09:16 Starting ManagerApplication using Java 17.0.10 with PID 3449 (/Users/yjh/Downloads/jhzx-parent/jhzx-mannager/target/classes started by yjh in /Users/yjh/Downloads/jhzx-parent)
+2024-05-17 10:09:16 The following 1 profile is active: "dev"
+2024-05-17 10:09:17 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-17 10:09:17 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 10:09:17 Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2024-05-17 10:09:17 Tomcat initialized with port(s): 8501 (http)
+2024-05-17 10:09:17 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-17 10:09:17 Starting service [Tomcat]
+2024-05-17 10:09:17 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-17 10:09:17 Initializing Spring embedded WebApplicationContext
+2024-05-17 10:09:17 Root WebApplicationContext: initialization completed in 759 ms
+2024-05-17 10:09:18 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-17 10:09:18 Tomcat started on port(s): 8501 (http) with context path ''
+2024-05-17 10:09:18 Started ManagerApplication in 2.056 seconds (process running for 2.352)
+2024-05-17 10:09:28 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17 10:09:28 Initializing Servlet 'dispatcherServlet'
+2024-05-17 10:09:28 Completed initialization in 9 ms
+2024-05-17 10:09:36 HikariPool-1 - Starting...
+2024-05-17 10:09:36 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43569fcf
+2024-05-17 10:09:36 HikariPool-1 - Start completed.
